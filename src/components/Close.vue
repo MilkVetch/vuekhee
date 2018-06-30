@@ -33,8 +33,8 @@ export default {
   props: {
     xColor: String,
     bgColor: String,
-    btnSize: Number,
-    xSize: Number
+    btnSize: String,
+    xSize: String
   },
   methods: {
     mouseOver: function () {

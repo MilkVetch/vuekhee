@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="box">
     <div class="basic" v-if="!isShow">
       <section class="hi" >
           Hi!
@@ -13,10 +13,13 @@
     </div>
     <div class="detail" :class="{ active: isShow }">
       <AboutMe />
-      <!-- <button @click="isShow = !isShow">Close</button> -->
-      <div @click="isShow = !isShow" class="close">
+      <div
+        @click="isShow = !isShow"
+        class="close"
+        v-if="isShow"
+      >
         <Close
-          btn-size="70"
+          btn-size="40"
           x-size="24"
           bg-color="#ecf0f1"
           x-color="#2c3e50"
@@ -48,6 +51,7 @@ div
   .basic
     display: flex
     align-items: flex-start
+    flex-wrap: wrap
 
     .hi
       display: flex
@@ -79,19 +83,13 @@ div
     +size(0,0)
     border-radius: 50%
     overflow: hidden
-
-    .cross-btn
-      position: absolute
-      right: 2rem
-      top: 2rem
-      transition: all 0.4s ease
-      &:hover
-        .cross
-          &:before, &:after
-            background: $white
-      +hoverer(background, $white, $home)
-      &:active
-        background: tint($home, 20%)
+    .close
+      cursor: pointer
+      position: fixed
+      right: 3rem
+      bottom: 2rem
+      .cross-btn
+        transition: all 0.4s ease
 
   .detail.active
     +size(100%, 100vh)
