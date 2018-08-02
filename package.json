@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Khee's CV 2018 (A Vue.js project)",
   "author": "KheeHuang <Khee.Huang@hotmail.com>",
-  "homepage": "https://github.com/MilkVetch/vuekhee",
+  "homepage": "https://github.com/MilkVetch/viewkhee",
   "private": true,
   "scripts": {
     "deploy": "node ./node_modules/vue-gh-pages/index.js",
@@ -13,6 +13,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "hover.css": "^2.3.2",
     "vue": "^2.5.2",
     "vue-awesome": "^3.0.3",
     "vue-router": "^3.0.1"

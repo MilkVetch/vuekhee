@@ -40,7 +40,9 @@ export default {
 @import ../assets/sass/main
 
 header
-  // +hoverer(background,transparent, rgba(0,0,0,.3))
+  +size(160px, 100vh)
+  +hoverer(width, 70px, 160px)
+  transition: all 0.6s ease
   nav
     +hoverer(margin-left, -90px, 0)
     +size(160px, 100vh)

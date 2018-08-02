@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
+import About from '@/components/About'
 import Education from '@/components/Education'
 import Skills from '@/components/Skills'
 import WorkExp from '@/components/WorkExp'
@@ -15,7 +16,17 @@ export default new Router({
       name: 'Home',
       component: Home,
       meta: {
-        color: '#2c3e50'
+        color: '#2c3e50',
+        ifg: true
+      }
+    },
+    {
+      path: '/About',
+      name: 'About',
+      component: About,
+      meta: {
+        color: '#4AB19A',
+        ifg: false
       }
     },
     {
@@ -23,7 +34,8 @@ export default new Router({
       name: 'Education',
       component: Education,
       meta: {
-        color: '#2980b9'
+        color: '#2980b9',
+        ifg: false
       }
     },
     {
@@ -31,7 +43,8 @@ export default new Router({
       name: 'Skills',
       component: Skills,
       meta: {
-        color: '#8e44ad'
+        color: '#8e44ad',
+        ifg: false
       }
     },
     {
@@ -39,7 +52,8 @@ export default new Router({
       name: 'WorkExp',
       component: WorkExp,
       meta: {
-        color: '#27ae60'
+        color: '#27ae60',
+        ifg: false
       }
     },
     {
@@ -47,7 +61,8 @@ export default new Router({
       name: 'Contact',
       component: Contact,
       meta: {
-        color: '#16a085'
+        color: '#2ed573',
+        ifg: false
       }
     }
   ]

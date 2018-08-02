@@ -1,6 +1,6 @@
 <template>
   <div>
-    {{ $route.meta.color }}
+
   </div>
 </template>
 
